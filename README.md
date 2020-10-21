@@ -1,5 +1,7 @@
 # A minimalistic reproduction of the issue described in https://github.com/angular/angular/issues/39282
 
+It contains two vanilla Angular projects, each with one library. The library in the **coreApp** project is configured in ng_package to build into the **local_modules** folder, and its module imports `@angular/common`; the **userApp** project consumes the **coreLib** via npm from the **local_modules** folder.
+
 ## Reproduction steps
 
 1. Open **coreApp** folder in terminal.
